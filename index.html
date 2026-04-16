@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Crumbs Bakery</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background-color: #fff5f7;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1559622214-8f1f5b1c1d6d');
+    background-size: cover;
+    height: 90vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section {
+    padding: 70px 20px;
+}
+
+.menu-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery img {
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.testimonial {
+    background: #fff5f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">Sweet Crumbs</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+<div>
+<h1 class="display-4 fw-bold">Sweet Crumbs Bakery</h1>
+<p>Freshly baked happiness for every occasion</p>
+<a href="#contact" class="btn btn-light mt-3">Order Now</a>
+</div>
+</section>
+
+<!-- About -->
+<section class="section text-center" id="about">
+<div class="container">
+<h2>About Us</h2>
+<p>Sweet Crumbs Bakery is a home-based bakery in Kolkata offering freshly baked cakes, cupcakes, and desserts. We specialize in custom cakes made with love and high-quality ingredients.</p>
+</div>
+</section>
+
+<!-- Menu -->
+<section class="section bg-light" id="menu">
+<div class="container">
+<h2 class="text-center mb-5">Our Menu</h2>
+
+<div class="row">
+<div class="col-md-4">
+<div class="menu-item">
+<h5>Chocolate Cake</h5>
+<p>Rich chocolate layered cake</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="menu-item">
+<h5>Red Velvet Cake</h5>
+<p>Classic creamy red velvet</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="menu-item">
+<h5>Vanilla Cupcakes</h5>
+<p>Soft cupcakes with frosting</p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Gallery -->
+<section class="section" id="gallery">
+<div class="container">
+<h2 class="text-center mb-5">Gallery</h2>
+<div class="row">
+<div class="col-md-4"><img src="https://images.unsplash.com/photo-1605475128022-2f5a4c0a0f8e" class="img-fluid"></div>
+<div class="col-md-4"><img src="https://images.unsplash.com/photo-1586985564150-6e4d6c9e6f7b" class="img-fluid"></div>
+<div class="col-md-4"><img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f" class="img-fluid"></div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials -->
+<section class="section bg-light">
+<div class="container">
+<h2 class="text-center mb-4">What Customers Say</h2>
+
+<div class="row">
+<div class="col-md-4">
+<div class="testimonial">
+<p>"Amazing cakes! Fresh and delicious."</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="testimonial">
+<p>"Perfect for birthdays and events."</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="testimonial">
+<p>"Highly recommend Sweet Crumbs!"</p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+<div class="container">
+<h2 class="text-center mb-4">Contact Us</h2>
+
+<div class="row">
+<div class="col-md-6">
+<p><strong>Phone:</strong> +91 9876543210</p>
+<p><strong>Email:</strong> sweetcrumbs@gmail.com</p>
+<p><strong>Location:</strong> Kolkata, India</p>
+</div>
+
+<div class="col-md-6">
+<form onsubmit="showMessage(event)">
+<input type="text" class="form-control mb-2" placeholder="Your Name" required>
+<input type="email" class="form-control mb-2" placeholder="Your Email" required>
+<textarea class="form-control mb-2" placeholder="Your Message"></textarea>
+<button class="btn btn-dark">Send Message</button>
+</form>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Sweet Crumbs Bakery | All Rights Reserved</p>
+</footer>
+
+<script>
+function showMessage(e){
+e.preventDefault();
+alert("Thank you! We'll contact you soon.");
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
